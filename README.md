@@ -1,5 +1,5 @@
 # image-sorter2
-Copies or moves images from a folder into subfolders.
+One-click image sorting/labelling script. Copies or moves images from a folder into subfolders.
 
 <img width="700" alt="pic_github_readme" src="https://user-images.githubusercontent.com/16193553/53246066-89bfd680-36a7-11e9-9eaf-9adee0b8efa1.png">
 
