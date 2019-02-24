@@ -4,10 +4,10 @@ One-click image sorting/labelling script. Copies or moves images from a folder i
 <img width="700" alt="pic_github_readme" src="https://user-images.githubusercontent.com/16193553/53246066-89bfd680-36a7-11e9-9eaf-9adee0b8efa1.png">
 
 
-This script launches a GUI which displays one image after the other and lets the user give different labels from a list provided as input to the script. In contrast to original version, version 2 allows for relabelling and keeping track of the labels. Provides also short-cuts - press "1" to put into "label 1", press "2" to put into "label 2" a.s.o.
+This script is intended to be a help for users sorting their mixed images set into folders differentiated by classes - e.g. cats image folder, dog images folder, bikes images folder a.s.o. The script launches a GUI which displays one image after the other and lets the user give different labels, corresponding to different folders, from a list provided as input to the script. In contrast to original version, version 2 allows for relabelling and keeping track of the labels. Provides also short-cuts - press "1" to put into "label 1", press "2" to put into "label 2" a.s.o.
 
 ## Usage:
-run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run then. You need also to provide your specific input in the preamble (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...) )
+run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run then. You need also to provide your specific input in the preamble (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...) ). Read the preamble in the .py-script, follow the discriptions and make the necessary changes to run it on your machine.
 
 ## Other useful scripts:
 A list of other image labelling/sorting script that might be helpful
