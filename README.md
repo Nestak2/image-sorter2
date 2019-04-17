@@ -26,6 +26,6 @@ https://play.google.com/store/apps/details?id=co.slidebox
 original Author: Christian Baumgartner (c.baumgartner@imperial.ac.uk),
 see here original "image-sorter" code: https://github.com/baumgach/image-sorter
 
-changes, version 2: Nestor Arsenov (nestorarsenov_AT_gmail_DOT_com)
+changes, version 2: Nestor Arsenov (nestorarsenov_AT_gmail_DOT_com), created at London Center for Nanotechnology with project funding provided by The Foundation for Innovative New Diagnostics (FIND)
 
 Date: 22. Feb 2019
