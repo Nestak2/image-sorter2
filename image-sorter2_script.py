@@ -52,6 +52,7 @@ file_extensions = ['.jpg', '.png', '.whatever']
 # In[8]:
 
 
+
 import pandas as pd
 import os
 import numpy as np
@@ -133,7 +134,7 @@ class ImageGui:
             
         #### added in version 2
         # Add sorting label
-        sorting_string = df.sorted_in_folder[self.index].split(os.sep)[-2]
+        sorting_string = os.path.split(df.sorted_in_folder[self.index])[-2]
         self.sorting_label = tk.Label(frame, text=("in folder: %s" % (sorting_string)), width=15)
         
         # Place typing input in grid, in case the mode is 'copy'
@@ -167,7 +168,7 @@ class ImageGui:
         self.progress_label.configure(text=progress_string)
         
         #### added in version 2
-        sorting_string = df.sorted_in_folder[self.index].split(os.sep)[-2] #shows the last folder in the filepath before the file
+        sorting_string = os.path.split(df.sorted_in_folder[self.index])[-2] #shows the last folder in the filepath before the file
         self.sorting_label.configure(text=("in folder: %s" % (sorting_string)))
         ####
 
@@ -186,7 +187,7 @@ class ImageGui:
         progress_string = "%d/%d" % (self.index+1, self.n_paths)
         self.progress_label.configure(text=progress_string)
         
-        sorting_string = df.sorted_in_folder[self.index].split(os.sep)[-2] #shows the last folder in the filepath before the file
+        sorting_string = os.path.split(df.sorted_in_folder[self.index])[-2] #shows the last folder in the filepath before the file
         self.sorting_label.configure(text=("in folder: %s" % (sorting_string)))
         
         if self.index < self.n_paths:
@@ -203,8 +204,7 @@ class ImageGui:
         self.index += 1
         progress_string = "%d/%d" % (self.index+1, self.n_paths)
         self.progress_label.configure(text=progress_string)
-        
-        sorting_string = df.sorted_in_folder[self.index].split(os.sep)[-2] #shows the last folder in the filepath before the file
+        sorting_string = os.path.split(df.sorted_in_folder[self.index])[-2] #shows the last folder in the filepath before the file
         self.sorting_label.configure(text=("in folder: %s" % (sorting_string)))
         
         if self.index < self.n_paths:
@@ -266,8 +266,7 @@ class ImageGui:
         
         progress_string = "%d/%d" % (self.index+1, self.n_paths)
         self.progress_label.configure(text=progress_string)
-        
-        sorting_string = df.sorted_in_folder[self.index].split(os.sep)[-2] #shows the last folder in the filepath before the file
+        sorting_string = os.path.split(df.sorted_in_folder[self.index])[-2] #shows the last folder in the filepath before the file
         self.sorting_label.configure(text=("in folder: %s" % (sorting_string)))
         
         self.set_image(df.sorted_in_folder[self.index])
