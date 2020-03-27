@@ -12,7 +12,7 @@ run 'pip install -r requirements.txt' to install dependencies.
 
 then
 
-run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run then. You need also to provide your specific input in the file-header (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...) ). Read the header in the .py-script, follow the discriptions and make the necessary changes to run it on your machine.
+run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run then. You need also to provide your specific input in the file-header (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...), resize keeping original aspect ratio or display original). Read the header in the .py-script, follow the discriptions and make the necessary changes to run it on your machine.
 
 ## Other useful scripts:
 A list of other image labelling/sorting script that might be helpful
