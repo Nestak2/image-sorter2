@@ -46,6 +46,11 @@ df_path = '/file_path/to/non_existing_file_df.txt'
 
 # a selection of what file-types to be sorted, anything else will be excluded
 file_extensions = ['.jpg', '.png', '.whatever']
+
+# set resize to True to resize image keeping same aspect ratio
+# set resize to False to display original image
+resize = True
+
 #####
 
 
@@ -272,15 +277,19 @@ class ImageGui:
         self.set_image(df.sorted_in_folder[self.index])
 
     @staticmethod
-    def _load_image(path, size=(400,700)):
+    def _load_image(path):
         """
         Loads and resizes an image from a given path using the Pillow library
         :param path: Path to image
-        :param size: Size of display image
-        :return: Resized image
+        :return: Resized or original image 
         """
         image = Image.open(path)
-        image = image.resize(size, Image.ANTIALIAS)
+        if(resize):
+            max_height = 500
+            img = image 
+            s = img.size
+            ratio = max_height / s[1]
+            image = img.resize((int(s[0]*ratio), int(s[1]*ratio)), Image.ANTIALIAS)
         return image
 
     @staticmethod
