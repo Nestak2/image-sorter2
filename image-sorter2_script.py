@@ -67,6 +67,8 @@ import tkinter as tk
 import os
 from shutil import copyfile, move
 from PIL import ImageTk, Image
+import exifread
+import whatimage
 
 class ImageGui:
     """
@@ -283,7 +285,14 @@ class ImageGui:
         :param path: Path to image
         :return: Resized or original image 
         """
-        image = Image.open(path)
+        if path.split('.')[-1].lower() != 'heic':
+            image = Image.open(path)
+        else: #deal with heic
+            with open(path, 'rb') as f:
+                data = f.read()
+                fmt = whatimage.identify_image(data)
+                i = pyheif.read_heif(data)
+                image = Image.frombytes(mode=i.mode, size=i.size, data=i.data)
         if(resize):
             max_height = 500
             img = image 
