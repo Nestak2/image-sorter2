@@ -6,3 +6,4 @@ pytz==2019.3
 six==1.14.0
 pyheif==0.5.1
 whatimage==0.0.3
+ExifRead==2.3.2
