@@ -8,6 +8,7 @@ This script is intended to be a help for users sorting a set of mixed images int
 
 ## Usage:
 
+Ensure tk is installed, e.g. 'sudo apt-get install python3-tk' See: https://tkdocs.com/tutorial/install.html
 run 'pip install -r requirements.txt' to install dependencies. 
 
 then
