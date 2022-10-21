@@ -8,12 +8,10 @@ This script is intended to be a help for users sorting a set of mixed images int
 
 ## Usage:
 
-Ensure tk is installed, e.g. 'sudo apt-get install python3-tk' See: https://tkdocs.com/tutorial/install.html
+Check that you have installed all the needed packages listed in requirements.txt (package versions were working as of Feb 2019). Ensure tk is installed, e.g. 'sudo apt-get install python3-tk' See: https://tkdocs.com/tutorial/install.html
 run 'pip install -r requirements.txt' to install dependencies. 
 
-then
-
-run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run then. You need also to provide your specific input in the file-header (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...), resize keeping original aspect ratio or display original). Read the header in the .py-script, follow the discriptions and make the necessary changes to run it on your machine.
+Run 'python sort_folder_vers2.py' or copy the script in a jupyter notebook and run it. You need also to provide your specific input in the file-header (source folder, labels, 'copy' or 'move' mode, path to tracker file, desired file extensions (.jpg, .png, ...), resize keeping original aspect ratio or display original). Read the header in the .py-script, follow the discriptions and make the necessary changes to run it on your machine.
 
 ## Other useful scripts:
 A list of other image labelling/sorting script that might be helpful
