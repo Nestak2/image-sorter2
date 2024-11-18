@@ -67,9 +67,6 @@ import tkinter as tk
 import os
 from shutil import copyfile, move
 from PIL import ImageTk, Image
-import exifread
-import whatimage
-
 class ImageGui:
     """
     GUI for iFind1 image sorting. This draws the GUI and handles all the events.
@@ -290,7 +287,6 @@ class ImageGui:
         else: #deal with heic
             with open(path, 'rb') as f:
                 data = f.read()
-                fmt = whatimage.identify_image(data)
                 i = pyheif.read_heif(data)
                 image = Image.frombytes(mode=i.mode, size=i.size, data=i.data)
         if(resize):
